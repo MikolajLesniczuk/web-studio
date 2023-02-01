@@ -1,5 +1,6 @@
 .lorem-list{
     display: flex;
+    flex-direction: column;
     column-gap: 30px;
     font-family: $fontInherit;
     font-style: normal;
@@ -7,12 +8,13 @@
     font-size: 14px;
     line-height: 1.71;
     color:$greyColor;
+    
 
-&__label{
-flex-basis: calc((100% - 3 * 30px) / 4);
-}
+// &__label{
+// flex-basis: calc((100% - 3 * 30px) / 4);
+// }
 
-&__span {
+&__title {
 font-family: $fontInherit;
 font-style: normal;
 font-weight: 700;
@@ -20,6 +22,25 @@ font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color: $blackcolor;
-padding-bottom:10px;
+padding-top:30px;
+text-align: center;
+
+
+}
+
+&__description {
+font-family: $fontRoboto; 
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: $greyColor;
+padding-top:10px ;
+margin-left:15px ;
+width:450px;
+
+
+
 }
 }

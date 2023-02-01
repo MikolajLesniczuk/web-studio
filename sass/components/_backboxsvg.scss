@@ -1,18 +1,19 @@
 .backbox-main {
     display: flex;
-    column-gap: 30px;
+    flex-direction: column;
 
 
 &__svg {
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: $secondaryWhiteColor;
-    flex-basis: calc((100% - 3 * 30px) / 4);
-    margin-top: 94px;
+    
+    margin-top: 60px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    margin-left: 15px;
     }
 }

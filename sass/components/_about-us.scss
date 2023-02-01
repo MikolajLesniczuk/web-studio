@@ -1,5 +1,7 @@
 .about-us__list{
-    display: flex;
+    display: none;
+    visibility: hidden;
+    // none
     column-gap: 30px;
     position: relative;
 }
@@ -33,6 +35,9 @@ max-height: 294px;
 }
 
 .about-us__title {
+    // nonoe
+    display: none;
+    visibility: hidden;
     font-family: $fontInherit;
     font-style: normal;
     font-weight: 700;

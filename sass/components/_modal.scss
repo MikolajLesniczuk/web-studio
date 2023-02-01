@@ -4,18 +4,19 @@
     top:0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
     background-color: rgba(0, 0, 0,0.1);
     transition-property:background-color,visibility,opacity;
     transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 2s linear , opacity 2s ease ;
     }
     
     .modal{
+        margin-left: 15px;
+        margin-right: 15px;
+       margin-top: 93px;
     position: absolute;
-    width:528px;
-    height:581px;
+    width: 450px;
+    height:609px;
     background-color: $whitecolor;
     box-shadow:$secondaryBoxShadow ;
     border-radius: 4px;
@@ -95,8 +96,9 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize:none;
-    width: 448px;
+    width: 370px;
     height: 120px;
+   
     }
 
 &__label{
@@ -144,7 +146,7 @@ margin-bottom: 4px;
         position: absolute;
         display: block;
         top:2px;
-       left: 52px;
+       left: 40px;
         height: 15px;
         width: 16px;
       
@@ -165,7 +167,7 @@ margin-bottom: 4px;
 
     &__svg{
         position: absolute;
-     left:54px;
+     left:41px;
      top:5px;
      
        fill:$whitecolor;
@@ -181,17 +183,17 @@ margin-bottom: 4px;
     font-family: $fontRoboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $greyColor;
-     margin-left: 77px;
+     margin-left: 64px;
 }
 &__statute{
     font-family: $fontRoboto;
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
+font-size: 12px;
 line-height: 24px;
 letter-spacing: 0.03em;
 color:$bluecolor;
@@ -306,7 +308,7 @@ font-size: 16px;
 line-height: 30px;
 letter-spacing: 0.06em;
 color: $whitecolor;
-margin-left: 150px; 
+margin-left: 125px; 
 margin-top: 65px;
 cursor: pointer;
 

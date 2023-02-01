@@ -6,7 +6,7 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #212121;
-    width: 1600px;
+    max-width: 480px;
 }
 
 
@@ -20,12 +20,15 @@ text-decoration: none;
 
 
 .section{
- padding-bottom: 94px;
-padding-top:94px; 
+ padding-bottom: 30px;
+padding-top:60px;
+}
+.section-header{
+padding-bottom: 30px;
+padding-top:16px;
 }
 
 .container {
-    max-width: 1200px;
-    margin-left: 215px;
-    margin-right: 0;
+    max-width: 480px;
+   
     }

@@ -1,7 +1,8 @@
 
  .our-team {
+    
     background-color: $secondaryWhiteColor;
-    width: 1600px;
+    width: 480px;
     
      
 &__title {
@@ -16,13 +17,16 @@
 }
 &__list {
     display: flex;
-    column-gap: 30px;
-    margin-left:215px;
-    margin-right:215px;
+    flex-direction: column;
+    
+    margin-left:15px;
+    margin-right:15px;
     }
     
     &__photo{
-    flex-basis: calc((100% - 3 * 30px) / 4);
+        display: block;
+        margin-top:30px ;
+    // flex-basis: calc((100% - 3 * 30px) / 4);
     box-shadow:$secondaryBoxShadow;
     }
 }
@@ -31,7 +35,7 @@
     padding-top: 30px;
     padding-bottom: 10px;
     text-align: center;
-    width: 270px;
+    
     font-family:$fontInherit;
     font-style: normal;
     font-weight: 500;
@@ -42,9 +46,9 @@
     }
     
     .photo-label__workplace {
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     text-align: center;
-    width: 270px;
+
     font-family: $fontInherit;
     font-style: normal;
     font-weight: 400;
@@ -62,9 +66,9 @@
     
     .social{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        width: 270px;
+       
         cursor: pointer;
     
     
@@ -75,6 +79,7 @@
         justify-content: center;
         align-items: center;
         fill:$secondaryGreyColor;
+        margin-left: 10px;
 
         &:hover,
     &:focus
@@ -91,10 +96,46 @@
 }
     
     .photo-label{
-        border-left: 1px solid #eeeeee;
-        border-right: 1px solid #eeeeee;
-        border-bottom: 1px solid #eeeeee;
-        padding-bottom: 30px;
+      
+        padding-bottom: 24px;
         background-color: $whitecolor;
         border-radius: 0px 0px 4px 4px;
     }
+    .photo4{
+        width:450px ;
+       
+        height: 460px;
+        background-image: url(../images/img4-mobile.jpg) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .photo5{
+        width:450px ;
+        
+        height: 460px;
+        background-image: url(../images/img5-mobile.jpg) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+   
+    .photo6{
+        width:450px ;
+        
+        height: 460px;
+        background-image: url(../images/img6-mobile.jpg) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .photo7{
+        width:450px ;
+        
+        height: 460px;
+        background-image: url(../images/img7-mobile.jpg) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+   
