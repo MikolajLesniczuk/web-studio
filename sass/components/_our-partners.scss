@@ -1,12 +1,14 @@
 .partners{
     background-color: $whitecolor;
-    max-width: 1600px;
+    max-width: 480px;
+   
 
 &__title {
+    
     font-family: $fontRoboto;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -15,15 +17,18 @@
 
 &__list{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
-    margin-left: 215px;
-    margin-right: 215px;
+    margin-left: 15px;
+    margin-right: 15px;
+   
    
     &--svg {
-        width: 170px;
+        
+        width: 210px;
         height: 92px;
         background-color: $whitecolor;
-        margin-top: 94px;
+        margin-top: 30px;
         justify-content: center;
         align-items: center;
         border: 1px solid $secondaryGreyColor;

@@ -1,6 +1,8 @@
 .page-footer {
     background-color:$thirdcolor; 
     display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .location {
     padding-bottom:9px;
@@ -52,7 +54,14 @@
     color: $whitecolor;
 }
 
-.form-newsletter__label{
+
+
+
+.form-newsletter{
+    display: flex;
+    flex-direction: column;
+
+&__label{
     font-family: $fontRoboto;
 font-style: normal;
 font-weight: 700;
@@ -61,7 +70,23 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: $whitecolor;
-margin-left:78px;
+text-align: center;
+
+}
+
+&__email{
+    margin-left:15px;
+    margin-top: 20px;
+    width: 450px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: $thirdcolor;
+padding-left: 16px;
+color:$whitecolor;
+outline: 0;
+}
 }
 
 .newsletter-image{
@@ -70,3 +95,47 @@ margin-left:78px;
         
 }
 
+.button-newsletter{
+   
+
+background: $bluecolor;
+box-shadow: $primaryBoxShadow;
+border-radius: 4px;
+margin-top:36px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+&__label{
+    display: flex;
+justify-content: center;
+align-items: center;
+    margin-top:20px ;
+    margin-left:140px;
+font-family: $fontRoboto;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.06em;
+color: $whitecolor;
+background-color: $bluecolor;
+border: none;
+width: 200px;
+height: 50px;
+
+
+padding-left:22px;
+border-radius: 4px;
+cursor: pointer;
+
+
+    
+}
+&__svg{
+   
+    fill: $whitecolor;
+    margin-left: 24px;
+}
+}

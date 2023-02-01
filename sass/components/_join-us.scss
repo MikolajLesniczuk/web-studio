@@ -1,8 +1,9 @@
 
 .join-us{
-    width:206px;
-    height:80px;
-    margin-left: 70px;
+    // width:206px;
+    // height:80px;
+    // margin-left: 70px;
+    
 
 &__title {
     font-family: 'Roboto';
@@ -14,16 +15,18 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding-left: 10px;
+    text-align: center;
 }
 
 
 
 &__social{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
     padding-top: 20px;
+   
 
     &--svg{
         width: 44px;
@@ -34,6 +37,7 @@
         background: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
         fill:#ffffff;
+        margin-left:10px ;
 
         &:hover,
 &:focus {

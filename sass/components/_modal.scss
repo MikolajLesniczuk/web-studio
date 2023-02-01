@@ -216,81 +216,8 @@ cursor: pointer;
 
 
 
-.button-newsletter{
-    position: absolute;
-    margin-left: 448px;
-    width: 200px;
-height: 50px;
-background: $bluecolor;
-box-shadow: $primaryBoxShadow;
-border-radius: 4px;
-margin-top:36px;
-display: flex;
 
-&__label{
-font-family: $fontRoboto;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-letter-spacing: 0.06em;
-color: $whitecolor;
-background-color: $bluecolor;
-border: none;
-justify-content: center;
-align-items: center;
-padding-left:22px;
-border-radius: 4px;
-cursor: pointer;
-width: 358px;
-height: 50px;
-display: flex;
 
-    
-}
-&__svg{
-    fill: $whitecolor;
-    margin-left: 24px;
-}
-}
-
-.form-newsletter{
-    display: flex;
-    flex-direction: column;
-
-&__label{
-    font-family: $fontRoboto;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: $whitecolor;
-margin-left:78px;
-
-}
-
-&__email{
-    margin-left:78px;
-    margin-top: 20px;
-    width: 358px;
-height: 50px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-background-color: $thirdcolor;
-padding-left: 16px;
-color:$whitecolor;
-outline: 0;
-}
-}
-
-.newsletter-image{
- margin-left: 12px;
-        fill:$whitecolor;
-        
-}
 
 
 
