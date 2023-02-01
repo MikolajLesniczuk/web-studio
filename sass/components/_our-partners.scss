@@ -1,0 +1,46 @@
+.partners{
+    background-color: $whitecolor;
+    max-width: 1600px;
+
+&__title {
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $blackcolor;}
+
+
+&__list{
+    display: flex;
+    column-gap: 30px;
+    margin-left: 215px;
+    margin-right: 215px;
+   
+    &--svg {
+        width: 170px;
+        height: 92px;
+        background-color: $whitecolor;
+        margin-top: 94px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $secondaryGreyColor;
+        border-radius: 4px;
+        display: flex;
+        cursor: pointer;
+        fill:$secondaryGreyColor;
+
+        &:hover,
+&:focus{
+    border: 1px solid $bluecolor;
+    fill: $bluecolor;
+    cursor: pointer;
+    transition-property:fill,border;
+    transition:$transitionFill, $transitionBorder;
+}
+    }
+}
+    
+   }

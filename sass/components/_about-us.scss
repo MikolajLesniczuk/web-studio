@@ -1,0 +1,49 @@
+.about-us__list{
+    display: flex;
+    column-gap: 30px;
+    position: relative;
+}
+.about-us___photo {
+flex-basis: calc((100% - 2 * 30px) / 3);
+position: relative;
+max-width: 370px;
+max-height: 294px;
+
+&--label{
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:$whitecolor;
+
+    &-background{
+        position: absolute;
+         bottom: 0;
+         left:0;
+         right: 0;
+         padding: 27px 90px;
+         background-color:rgba(47, 48, 58, 0.8);
+       }
+    }
+    
+}
+
+.about-us__title {
+    font-family: $fontInherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color:$blackcolor;
+    margin-bottom: 50px;
+ }
+ 
+
+ 
+
+

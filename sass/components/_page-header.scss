@@ -1,0 +1,136 @@
+.page-header {
+    display: flex;
+    text-decoration: none;
+    border-bottom: 1px solid #ececec;
+   max-height: 80px;
+}
+
+.nav{
+    display: flex;
+    margin-left: 93px;
+    
+
+&__items {
+    margin-right: 46px;
+    text-decoration: none;
+    align-items:baseline;
+    position: relative;
+    padding-bottom: 15px;
+}
+&__link {
+    color: $blackcolor;
+    font-family: $fontInherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    
+    
+    &:hover,
+    &:focus {
+        color: $bluecolor;
+        transition-property: color;
+        transition:$transitionColor ;
+        }
+    }
+}
+
+
+.logo {
+    margin-left: 215px;
+    display: block;
+    
+
+&__primary-path{
+    color: $bluecolor;
+    font-family: $fontRaleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    }
+
+&__secondary-path{
+    color: $secondaryBlackColor;
+    font-family: $fontRaleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 40px;
+    }
+}
+   
+
+
+
+    .contact-tel {
+    margin-left: 50px;
+  justify-content: baseline;
+    color:$greyColor;
+text-decoration: none;
+font-family: $fontInherit;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+
+&:hover,
+&:focus{
+    color: $bluecolor;
+transition-property:color;
+transition: $transitionColor ;
+    fill: $bluecolor;
+    transition-property:fill ;
+    transition: $transitionFill;
+    }
+}
+
+
+.contact-mail {
+color: $greyColor;
+text-decoration: none;
+font-family: $fontInherit;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+margin-top:3px;
+    margin-left: 350px;    
+    align-items: baseline;
+
+&:hover,
+&:focus
+    {
+color: $bluecolor;
+transition-property:color ,fill;
+transition: $transitionColor, $transitionFill ;
+fill: $bluecolor;
+
+}
+}
+
+
+    .nav__link--active::after{ 
+    content: "";
+    background-color: $bluecolor;
+    border-radius: 2px;
+    border: 2px solid $bluecolor; 
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    }
+
+    .portfolio::after{ 
+    content: "";
+    background-color:  $bluecolor;
+    border-radius: 2px;
+    border: 2px solid $bluecolor; 
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;}
+
+
+

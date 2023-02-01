@@ -1,0 +1,72 @@
+.page-footer {
+    background-color:$thirdcolor; 
+    display: flex;
+}
+.location {
+    padding-bottom:9px;
+    padding-top: 20px;
+
+
+&__label {
+    color:$whitecolor;
+    font-family: $fontInherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+}
+
+
+
+.contact__footer{
+    padding-bottom:9px;
+
+
+&--label {
+    color: rgba(255, 255, 255, 0.6) ;
+    font-family: $fontInherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    &:hover,
+&:focus {
+    color:$bluecolor;
+    transition-property:color;
+    transition: $transitionColor;
+}
+   }
+
+
+}
+
+
+.logo__secondary-path--footer {
+    font-family: $fontRaleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $whitecolor;
+}
+
+.form-newsletter__label{
+    font-family: $fontRoboto;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $whitecolor;
+margin-left:78px;
+}
+
+.newsletter-image{
+ margin-left: 12px;
+        fill:$whitecolor;
+        
+}
+

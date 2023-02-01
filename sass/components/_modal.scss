@@ -1,0 +1,314 @@
+.backdrop{
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0,0.1);
+    transition-property:background-color,visibility,opacity;
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 2s linear , opacity 2s ease ;
+    }
+    
+    .modal{
+    position: absolute;
+    width:528px;
+    height:581px;
+    background-color: $whitecolor;
+    box-shadow:$secondaryBoxShadow ;
+    border-radius: 4px;
+    transition-property:background-color,box-shadow,transform;
+    transition: $transitionBackgroundColor,$transitionBoxShadow,$transitiontransform;
+    animation-name: effects;
+    animation-duration: 3500ms;
+    
+    &--close{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        background-color: $whitecolor;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor:pointer;
+        }
+    }
+     
+@keyframes effects {
+    0%{
+    scale:0.1;
+    opacity:0.2;
+    }
+       
+    100%{
+    scale:1;
+    opacity:1;
+    }
+
+    }
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: translateY(-100%);
+    }
+
+.form-data{
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $blackcolor;
+    margin: 40px 40px 12px 40px;
+    }
+
+.form-list{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &__backbox{
+        position: relative;
+       
+    }
+    
+    &__svg{
+        position: absolute;
+      top: 11.5px;
+      left: 16px;
+      
+    }
+
+    &__textarea{
+        padding:12px 16px 12px 16px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize:none;
+    width: 448px;
+    height: 120px;
+    }
+
+&__label{
+    padding-top: 10px;
+    font-family: $fontRoboto;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: $greyColor;
+margin-bottom: 4px;
+}
+
+&__input{
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding-left:42px;
+    
+    &:focus{
+        border: 1px solid $bluecolor;
+    border-radius: 4px;
+    fill:$bluecolor;
+    }
+    }
+
+
+}
+.form-list__svg:focus{
+    fill:$bluecolor;
+}
+
+
+
+.form-label{
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+
+      
+    &__checkbox{
+        position: absolute;
+        display: block;
+        top:2px;
+       left: 52px;
+        height: 15px;
+        width: 16px;
+      
+        appearance: none;
+        cursor: pointer;
+        border: 2px solid $blackcolor;
+        border-radius: 2px;
+
+        &:checked{
+            background-color: $bluecolor;
+            
+            border: none;
+            border-radius: 2px;
+                }
+            
+    }
+   
+
+    &__svg{
+        position: absolute;
+     left:54px;
+     top:5px;
+     
+       fill:$whitecolor;
+       cursor: pointer;
+       transition: $transitionFill;
+       }
+
+    
+    
+
+&__term{
+    position: relative;
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $greyColor;
+     margin-left: 77px;
+}
+&__statute{
+    font-family: $fontRoboto;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color:$bluecolor;
+text-decoration: underline;
+cursor: pointer;
+}
+
+
+
+
+
+
+}
+
+.form-list__input:focus + .form-list__svg {
+    fill:$bluecolor;
+    transition: $transitionFill;
+}
+    
+
+
+
+.button-newsletter{
+    position: absolute;
+    margin-left: 448px;
+    width: 200px;
+height: 50px;
+background: $bluecolor;
+box-shadow: $primaryBoxShadow;
+border-radius: 4px;
+margin-top:36px;
+display: flex;
+
+&__label{
+font-family: $fontRoboto;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.06em;
+color: $whitecolor;
+background-color: $bluecolor;
+border: none;
+justify-content: center;
+align-items: center;
+padding-left:22px;
+border-radius: 4px;
+cursor: pointer;
+width: 358px;
+height: 50px;
+display: flex;
+
+    
+}
+&__svg{
+    fill: $whitecolor;
+    margin-left: 24px;
+}
+}
+
+.form-newsletter{
+    display: flex;
+    flex-direction: column;
+
+&__label{
+    font-family: $fontRoboto;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $whitecolor;
+margin-left:78px;
+
+}
+
+&__email{
+    margin-left:78px;
+    margin-top: 20px;
+    width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: $thirdcolor;
+padding-left: 16px;
+color:$whitecolor;
+outline: 0;
+}
+}
+
+.newsletter-image{
+ margin-left: 12px;
+        fill:$whitecolor;
+        
+}
+
+
+
+.button-form-modal{
+width: 200px;
+height: 50px;
+background-color: $bluecolor;
+box-shadow: $primaryBoxShadow;
+border-radius: 4px;
+border: none;
+font-family: $fontRoboto;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.06em;
+color: $whitecolor;
+margin-left: 150px; 
+margin-top: 65px;
+cursor: pointer;
+
+
+}

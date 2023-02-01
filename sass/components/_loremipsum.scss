@@ -1,0 +1,25 @@
+.lorem-list{
+    display: flex;
+    column-gap: 30px;
+    font-family: $fontInherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color:$greyColor;
+
+&__label{
+flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
+&__span {
+font-family: $fontInherit;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: $blackcolor;
+padding-bottom:10px;
+}
+}

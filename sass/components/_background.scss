@@ -1,0 +1,41 @@
+.main-upper {
+    background-color:none; 
+    width: 1600px;
+    height: 600px ;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url(../images/background.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__title {
+        color: $whitecolor;
+        text-align: center;
+        font-size:44px;
+        width: 696px ;
+        height: 120px;
+        margin-left: 452px;
+        padding-top:106px;
+        }
+        
+}
+
+.button--order {
+    cursor: pointer;
+    background-color: $bluecolor;
+    color: $whitecolor;
+    font-family:$fontInherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    padding: 10px 41px 10px 40px;
+    text-align: center;
+    margin-left: 700px;
+    margin-top: 124px;
+    box-shadow: $primaryBoxShadow;
+    border-radius: 4px;
+    border:none;
+}
+
+
