@@ -1,0 +1,147 @@
+
+ 
+    
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+   position: absolute;
+   margin-left: 433px;
+  
+   margin-top: 10px;
+    background-color:$whitecolor;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    @include tablet {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+  
+ 
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+   fill:$bluecolor;
+  }
+ 
+  
+  .menu-container {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px;
+    background-color: $whitecolor;
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+    width: 480px;
+    height: 100vh;
+  }
+  
+  .menu-toggle--close {
+   
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color:$blackcolor;
+    width:18px;
+    height: 18px;
+    background-color: $whitecolor;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        color:$bluecolor;
+    }
+  }
+  
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: $whitecolor;
+  
+  
+  &__link {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+letter-spacing: 0.02em;
+margin-bottom:36px;
+color: #212121;
+    display: block;
+   
+    color: $blackcolor;
+    text-decoration: none;
+    
+
+  }
+}
+  
+.mobile-menu__link--tel {
+    display: block;
+    margin-top: 266px;
+    margin-bottom: 32px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 40px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+color: #2196F3;
+
+}
+.mobile-menu__link--mail{
+    display: block;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.02em;
+color: #757575;
+
+}
+
+.social-mobile{
+    display: flex;
+    
+   
+}
+.social-mobile__link{
+    display: block;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding:10px;
+    margin-top:64px ;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height, or 122% */
+
+letter-spacing: 0.02em;
+
+color: #2196F3;
+    
+}
+
+.social-mobile__link--border{
+    border:none;
+}
