@@ -1,19 +1,27 @@
 .backbox-main {
-    display: flex;
-    flex-direction: column;
+  
+    margin-left: 15px;
+    margin-right: 15px;
+width: auto;
+
+
+
 
 
 &__svg {
-    width: 450px;
+   
+    width: auto;
     height: 120px;
-    background-color: $secondaryWhiteColor;
-    
-    margin-top: 60px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    margin-left: 15px;
+    background-color: $secondaryWhiteColor;
     }
+}
+
+.backbox-proba{
+     display: flex;
+    flex-direction: column;
 }

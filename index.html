@@ -81,19 +81,22 @@
     <main>
       <!--HERO-->
       <section class="main-upper section ">
-        <div >
+        <div class="main-upper__flex">
+        
           <h1 class="main-upper__title">
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
           </h1>
           <button  class="button button--order" type="button" data-modal-open>Zamów usługe</button>
         </div>
+      
       </section>
 
       <!--SVG-->
-      <section class="backbox-main container">
+      <section class="section-svg section">
+       <div class="container">
         <ul>
-          <li>
+          <li class="backbox-main">
         <div class="backbox-main__svg">
           <svg height="70" width="70">
             <use href="./images/icons.svg#icon-antena"></use>
@@ -103,7 +106,7 @@
               <p class="lorem-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel 
               arcu sem. Sed non sodales dui. Interdum et malesuada </p>
           </li>
-          <li>
+          <li class="backbox-main">
             <div class="backbox-main__svg">
               <svg height="70" width="70">
                 <use href="./images/icons.svg#icon-clock"></use>
@@ -113,7 +116,7 @@
                   <p class="lorem-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel 
                   arcu sem. Sed non sodales dui. Interdum et malesuada </p>
               </li>
-              <li>
+              <li class="backbox-main">
                 <div class="backbox-main__svg">
                   <svg height="70" width="70">
                     <use href="./images/icons.svg#icon-diagram"></use>
@@ -123,7 +126,7 @@
                       <p class="lorem-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel 
                       arcu sem. Sed non sodales dui. Interdum et malesuada </p>
                   </li>
-                  <li>
+                  <li class="backbox-main">
                     <div class="backbox-main__svg">
                       <svg height="70" width="70">
                         <use href="./images/icons.svg#icon-astronauta"></use>
@@ -134,6 +137,7 @@
                           arcu sem. Sed non sodales dui. Interdum et malesuada </p>
                       </li>
         </ul>
+      </div>
       </section>
 
       
@@ -504,25 +508,29 @@
     
     <textarea class="form-list__textarea" placeholder="Wprowadź tekst"></textarea>
     </li>
-  
-  
+ <li class="form-list">
     <label class="form-label">
       <input class="form-label__checkbox" id="checkbox" type="checkbox" name="checkbox"/>
- <div>
+
   <svg class="form-label__svg" width="13" height="10"><use href="./images/icons.svg#icon-check">
 
   </use></svg>
       
      
- </div>
+ 
 
  <span class="form-label__term">
   Oświadczam iż akceptuję
   <a class="form-label__statute" >Regulamin</a>
   i
   <a class="form-label__statute">Politykę Prywatności.</a></span>
+
 </label>
+ </li>
+ <li class="form-list form-list__button">
         <button class="button-form-modal" type="submit">Wyślij</button>
+      </li>
+   
       </ul>
       </form>
   

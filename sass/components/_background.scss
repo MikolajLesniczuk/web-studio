@@ -1,24 +1,34 @@
 .main-upper {
     
     background-color:none; 
-    width: 480px;
-    height: 400px ;
+    width: 100%;
+    height: auto;
+    // height: 400px ;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)), url(../images/background-mobile.jpg) ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 auto;
 
     &__title {
+        display: block;
         color: $whitecolor;
         text-align: center;
         font-size:26px;
-        width: 365px ;
+       
         height: 84px;
-        margin-left: 57px;
-        padding-top:106px;
+        margin:0 auto;
+        margin-top:20px;
         }
         
+}
+
+.main-upper__flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .button--order {
@@ -32,8 +42,9 @@
     line-height: 1.87;
     padding: 10px 41px 10px 40px;
     text-align: center;
-    margin-left: 140px;
-    margin-top: 80px;
+  
+    width: 200px;
+    height: 50px;
     box-shadow: $primaryBoxShadow;
     border-radius: 4px;
     border:none;
