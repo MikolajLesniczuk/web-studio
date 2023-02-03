@@ -37,7 +37,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 48px;
     background-color: $whitecolor;
     z-index: 999;
@@ -49,7 +49,7 @@
   .menu-container.is-open {
     transform: translateX(0);
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
   
   .menu-toggle--close {
@@ -99,7 +99,7 @@ color:$blackcolor;
   
 .mobile-menu__link--tel {
     display: block;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 32px;
     font-family: 'Roboto';
 font-style: normal;
