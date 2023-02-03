@@ -3,8 +3,31 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%;
+    width: 100%;}
+
+    .page-footer__container{
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include desktop{
+
+        }
+    }
+    
+
 }
+.flex-items{
+    @include tablet {
+        flex-basis: calc((100% - 1 * 90px) / 2);
+
+    }
+    @include desktop {
+        flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+}
+
 .location {
     padding-bottom:9px;
     padding-top: 20px;
@@ -90,6 +113,9 @@ background-color: $thirdcolor;
 padding-left: 16px;
 color:$whitecolor;
 outline: 0;
+@include tablet {
+    max-width: 450px;
+}
 }
 }
 

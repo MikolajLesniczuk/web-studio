@@ -87,9 +87,12 @@ margin-bottom:36px;
 color:$blackcolor;
     display: block;
     text-decoration: none;
-    &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         color:$bluecolor;
+    }
+    &--active{
+      color:$bluecolor;
     }
   }
 }

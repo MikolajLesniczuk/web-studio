@@ -10,7 +10,13 @@
     transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 2s linear , opacity 2s ease ;
     }
     
+.modal-flex{
+    display: flex;
+    justify-content: center;
+}
+
     .modal{
+      
         max-width: 450px;
         max-height: 609px;
         margin-left: 15px;
