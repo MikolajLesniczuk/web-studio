@@ -13,6 +13,8 @@
 .modal-flex{
     display: flex;
     justify-content: center;
+    
+    
 }
 
     .modal{
@@ -24,7 +26,7 @@
        margin-top: 93px;
     position: absolute;
     width: 90%;
-    height:693px;
+    height:90%;
     background-color: $whitecolor;
     box-shadow:$secondaryBoxShadow ;
     border-radius: 4px;
@@ -32,6 +34,7 @@
     transition: $transitionBackgroundColor,$transitionBoxShadow,$transitiontransform;
     animation-name: effects;
     animation-duration: 3500ms;
+   
     
     &--close{
         position: absolute;
