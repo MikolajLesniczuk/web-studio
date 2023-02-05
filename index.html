@@ -64,14 +64,14 @@
           href="mailto:info@devstudio.com"
           class="contact-mail"
         >
-          <svg  width="16" height="12">
+          <svg class="contact-svg" width="16" height="12">
             <use href="./images/icons.svg#icon-mail"></use>
           </svg>
           info@devstudio.com</a
         >
 
         <a href="tel:48111111111" class="contact-tel">
-          <svg width="10" height="16">
+          <svg class="contact-svg" width="10" height="16">
             <use href="./images/icons.svg#icon-smartphone"></use>
           </svg>
           +48 111 111 111</a
@@ -95,7 +95,7 @@
 
       <!--SVG-->
       <section class="section-svg section">
-       <div class="container">
+       <div>
         <ul class="backbox">
           <li class="backbox-main">
         <div class="backbox-main__svg">
@@ -184,18 +184,29 @@
         <div>
           <h2 class="our-team__title">Nasz zespół</h2>
 
-          <ul class="our-team__list"> 
+          <ul class="our-team__list "> 
             <li class="our-team__photo">
             
               
              
               <div class="photo-label">
                 <div >
-                  <figure class="photo4"></figure>
+                  <img class="team-image"
+      src="./images/mobile-photo/photo4-x1.jpg"
+      srcset="
+      ./images/mobile-photo/photo4-x1.jpg  480w,
+      ./images/mobile-photo/photo4-x2.jpg  960w,
+      ./images/foto-tablet/photo4-x1.jpg  354w,
+      ./images/foto-tablet/photo4-x2.jpg  708w,
+      ./images/foto-desktop/photo4-x1.jpg  270w,
+      ./images/foto-desktop/photo4-x2.jpg  540w,
+      "
+      sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 540px, 100vw"
+    />
                   <h3 class="photo-label__title">John Doe</h3>
                   <p class="photo-label__workplace">Product Designer</p>
                 </div>
-             
+             <img src="">
                 <div class="social">
                   <div class="social__elements">
                     <svg width="20" height="20">
@@ -225,7 +236,18 @@
               
               <div class="photo-label">
                 <div >
-                  <figure class="photo5"></figure>
+                  <img class="team-image"
+                  src="./images/mobile-photo/photo5-x1.jpg"
+                  srcset="
+                  ./images/mobile-photo/photo5-x1.jpg  480w,
+                  ./images/mobile-photo/photo5-x2.jpg  960w,
+                  ./images/foto-tablet/photo5-x1.jpg  354w,
+                  ./images/foto-tablet/photo5-x2.jpg  708w,
+                  ./images/foto-desktop/photo5-x1.jpg  270w,
+                  ./images/foto-desktop/photo5-x2.jpg  540w,
+                  "
+                  sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 540px, 100vw"
+                />
                   <h3 class="photo-label__title" >John Doe</h3>
                   <p class="photo-label__workplace">Frontend Developer</p>
                 </div>
@@ -259,7 +281,18 @@
              
               <div class="photo-label">
                 <div >
-                  <figure class="photo6"></figure>
+                  <img class="team-image"
+                  src="./images/mobile-photo/photo6-x1.jpg"
+                  srcset="
+                  ./images/mobile-photo/photo6-x1.jpg  480w,
+                  ./images/mobile-photo/photo6-x2.jpg  960w,
+                  ./images/foto-tablet/photo6-x1.jpg  354w,
+                  ./images/foto-tablet/photo6-x2.jpg  708w,
+                  ./images/foto-desktop/photo6-x1.jpg  270w,
+                  ./images/foto-desktop/photo6-x2.jpg  540w,
+                  "
+                  sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 540px, 100vw"
+                />
                   <h3 class="photo-label__title">John Doe</h3>
                   <p class="photo-label__workplace">Marketing</p>
                 </div>
@@ -292,7 +325,18 @@
               
               <div class="photo-label">
                 <div >
-                  <figure class="photo7"></figure>
+                  <img class="team-image"
+                  src="./images/mobile-photo/photo7-x1.jpg"
+                  srcset="
+                  ./images/mobile-photo/photo7-x1.jpg  480w,
+                  ./images/mobile-photo/photo7-x2.jpg  960w,
+                  ./images/foto-tablet/photo7-x1.jpg  354w,
+                  ./images/foto-tablet/photo7-x2.jpg  708w,
+                  ./images/foto-desktop/photo7-x1.jpg  270w,
+                  ./images/foto-desktop/photo7-x2.jpg  540w,
+                  "
+                  sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 540px, 100vw"
+                />
                   <h3 class="photo-label__title">John Doe</h3>
                   <p class="photo-label__workplace">UI Designer</p>
                 </div>
@@ -418,7 +462,7 @@
                   >info@example.com</a
                 >
               </li>
-              <li class="contact-footer-main">
+              <li class="contact__footer--main">
                 <a href="tel:+48111111111" class="contact__footer--label"
                   >+48 111 111 111</a
                 >

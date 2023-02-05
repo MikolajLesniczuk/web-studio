@@ -3,6 +3,11 @@
         display: flex;
         flex-wrap: wrap;
     }
+    @include desktop {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+ 
 }
 
 .backbox-main {
@@ -12,6 +17,10 @@
 width: auto;
 @include tablet {
     flex-basis: calc((100% - 1 * 60px) / 2);
+}
+@include desktop {
+    flex-basis: calc((100% - 3 * 40px) / 4);
+  
 }
 
 
