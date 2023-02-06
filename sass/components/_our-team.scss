@@ -4,6 +4,7 @@
     width: 100%;
     height: auto;
    
+   
  }
  
  .our-team {
@@ -37,10 +38,7 @@
 
     }
 
-    @include desktop {
-        margin-left: 150px;
-        margin-right: 150px;
-    }
+   
     }
     
     &__photo{
@@ -51,7 +49,7 @@
         flex-basis: calc((100% - 1 * 30px) / 2);
      }
      @include desktop {
-        flex-basis: calc((100% - 3 * 20px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
      }
     }
 }

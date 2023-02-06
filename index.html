@@ -28,7 +28,7 @@
     <title>Webstudio</title>
   </head>
   <body>
-    <header>
+    <header class="container">
       <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
@@ -39,7 +39,7 @@
             height="24"
             > <use href="./images/icons.svg#icon-menu"></use></svg>
         </button>
-      <section class="page-header section-header section">
+      <section class="page-header section-header section ">
         <a class="logo" href="./index.html"
           ><span class="logo__primary-path">Web</span
           ><span class="logo__secondary-path">Studio</span></a
@@ -95,7 +95,7 @@
 
       <!--SVG-->
       <section class="section-svg section">
-       <div>
+       <div class="container">
         <ul class="backbox">
           <li class="backbox-main">
         <div class="backbox-main__svg">
@@ -144,10 +144,10 @@
       
 
       <!--CZYM SIE ZAJMUJEMY-->
-      <section class="section container">
-        <div class="about-us">
+      <section class="section ">
+        <div class="about-us ">
           <h2 class="about-us__title">Czym się zajmujemy</h2>
-          <ul class="about-us__list">
+          <ul class="about-us__list ">
             <li class="about-us___photo">
               <img
                 src="images/img.jpg"
@@ -181,7 +181,7 @@
 
       <!--NASZ ZESPÓŁ-->
       <section class="our-team section">
-        <div>
+        <div class="container">
           <h2 class="our-team__title">Nasz zespół</h2>
 
           <ul class="our-team__list "> 
@@ -201,12 +201,12 @@
       ./images/foto-desktop/photo4-x1.jpg  270w,
       ./images/foto-desktop/photo4-x2.jpg  540w,
       "
-      sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 540px, 100vw"
+      sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
     />
                   <h3 class="photo-label__title">John Doe</h3>
                   <p class="photo-label__workplace">Product Designer</p>
                 </div>
-             <img src="">
+            
                 <div class="social">
                   <div class="social__elements">
                     <svg width="20" height="20">
@@ -246,7 +246,7 @@
                   ./images/foto-desktop/photo5-x1.jpg  270w,
                   ./images/foto-desktop/photo5-x2.jpg  540w,
                   "
-                  sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 540px, 100vw"
+                  sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                   <h3 class="photo-label__title" >John Doe</h3>
                   <p class="photo-label__workplace">Frontend Developer</p>
@@ -291,7 +291,7 @@
                   ./images/foto-desktop/photo6-x1.jpg  270w,
                   ./images/foto-desktop/photo6-x2.jpg  540w,
                   "
-                  sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 540px, 100vw"
+                  sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                   <h3 class="photo-label__title">John Doe</h3>
                   <p class="photo-label__workplace">Marketing</p>
@@ -335,7 +335,7 @@
                   ./images/foto-desktop/photo7-x1.jpg  270w,
                   ./images/foto-desktop/photo7-x2.jpg  540w,
                   "
-                  sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 540px, 100vw"
+                  sizes="(max-width: 767px) 480px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                   <h3 class="photo-label__title">John Doe</h3>
                   <p class="photo-label__workplace">UI Designer</p>
@@ -369,7 +369,7 @@
         </div>
       </section>
 
-      <section class="partners section">
+      <section class="partners section container">
         <h2 class="partners__title">Nasi Klienci</h2>
         <div>
           <ul class="partners__list">
@@ -439,8 +439,8 @@
 
 
     <footer>
-      <section class="page-footer section">
-        <div class="page-footer__container">
+      <section class="page-footer section ">
+        <div class="page-footer__container container">
         <div class="logo flex-items">
           <a href="./index.html"
             ><span class="logo__primary-path">Web</span
@@ -496,16 +496,17 @@
             </div>
           </div>
         </div>
-        </div>
+       
        
         <form>
-          <div>
+          <div >
         <div class="form-newsletter">
+          <div class="form-newsletter--flex">
       <label for="newsletter" class="form-newsletter__label">Zapisz się do newslettera</label>
 <input class="form-newsletter__email" type="email" name="email" placeholder="E-mail" id="newsletter"/>
           
-       
-        <!-- <div class="button-newsletter"> -->
+</div>
+        <div class="button-newsletter">
           <button type="email" class="button-newsletter__label ">Zapisz się <svg class="button-newsletter__svg" width="24" height="24">
             <use href="./images/icons.svg#icon-newsletter" >
 
@@ -514,9 +515,10 @@
         </button>
         </div>
            
-        <!-- </div> -->
+        </div>
           </div>
         </form>
+      </div>
       </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>

@@ -6,7 +6,10 @@ margin-top: 20px;
 margin-right: 89px;}
 
 @include desktop {
-    margin: 0;
+    display: block;
+    
+    margin-right: 70px;
+    
 }
     
 
@@ -21,6 +24,10 @@ margin-right: 89px;}
     color: #FFFFFF;
     padding-left: 10px;
     text-align: center;
+    @include desktop{
+        text-align: start;
+        margin-left: 5px;
+    }
 }
 
 

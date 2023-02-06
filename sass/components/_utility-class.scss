@@ -7,6 +7,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #212121;
     width: 100%;
+    
 }
 
 
@@ -26,4 +27,17 @@ padding-top:60px;
 .section-header{
 padding-bottom: 30px;
 padding-top:16px;
+}
+
+.container{
+
+
+    @include tablet{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    @include desktop {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
 }
