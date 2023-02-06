@@ -31,7 +31,8 @@ padding-top:16px;
 
 .container{
 
-
+max-width: 480px;
+margin: 0 auto;
     @include tablet{
         max-width: 768px;
         margin: 0 auto;
