@@ -19,15 +19,33 @@
         display: none;
         visibility: hidden;
     }
+    &--close {
+   
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      color:$blackcolor;
+      width:18px;
+      height: 18px;
+      background-color: $whitecolor;
+      border: none;
+      cursor: pointer;
+      &:hover,
+      &:focus {
+          color:$bluecolor;
+      }
+    }
+
+    &:hover,
+    &:focus {
+     fill:$bluecolor;
+    }
 }
 
   
  
   
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-   fill:$bluecolor;
-  }
+  
  
   
   .menu-container {
@@ -52,22 +70,7 @@
     height: 100vh;
   }
   
-  .menu-toggle--close {
-   
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color:$blackcolor;
-    width:18px;
-    height: 18px;
-    background-color: $whitecolor;
-    border: none;
-    cursor: pointer;
-    &:hover,
-    &:focus {
-        color:$bluecolor;
-    }
-  }
+  
   
   .mobile-menu {
     display: flex;
@@ -87,6 +90,33 @@ margin-bottom:36px;
 color:$blackcolor;
     display: block;
     text-decoration: none;
+
+    &--mail{
+      display: block;
+      font-family:$fontRoboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color:$greyColor;
+  
+  }
+
+    &--tel {
+      display: block;
+      margin-top: 100px;
+      margin-bottom: 32px;
+      font-family: $fontRoboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+letter-spacing: 0.02em;
+  color: $bluecolor;
+  
+  }
+
     &:focus,
     &:active {
         color:$bluecolor;
@@ -95,64 +125,40 @@ color:$blackcolor;
       color:$bluecolor;
     }
   }
+
+
+
 }
   
-.mobile-menu__link--tel {
-    display: block;
-    margin-top: 100px;
-    margin-bottom: 32px;
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 34px;
-line-height: 40px;
-/* identical to box height */
 
-letter-spacing: 0.02em;
 
-color: #2196F3;
-
-}
-.mobile-menu__link--mail{
-    display: block;
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-letter-spacing: 0.02em;
-color: #757575;
-
-}
 
 .social-mobile{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-   
-    
-   
-}
-.social-mobile__link{
+
+    &__link{
  
-  width: 100%;
-    display: block;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding:10px;
-    margin-top:64px ;
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-/* identical to box height, or 122% */
-
-letter-spacing: 0.02em;
-
-color: #2196F3;
+      width: 100%;
+        display: block;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding:10px;
+        margin-top:64px ;
+        font-family:$fontRoboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
     
-}
-
-.social-mobile__link--border{
-    border:none;
+    color: $bluecolor;
+    &--border{
+      border:none;
+  }
+        
+    }
+   
+    
+   
 }
